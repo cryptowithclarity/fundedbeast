@@ -23,7 +23,7 @@ scope = ["https://spreadsheets.google.com/feeds",
 creds_dict = json.loads(os.environ["GOOGLE_CREDS"])
 creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
-sheet = client.open_by_key("YOUR_SHEET_ID").sheet1
+sheet = client.open_by_key("1YGInEk2KtyhAbc28vcHgHMNhhiCwSEODCJBBpJSQm_g").sheet1
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
